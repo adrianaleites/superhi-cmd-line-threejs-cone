@@ -15,10 +15,10 @@ scene.add(cone);
 const animate = () => {
 	requestAnimationFrame( animate );
 
-	cone.rotation.x += 0.02;
-	cone.rotation.y += 0.02;
-	cone.rotation.z += 0.02;
-	camera.position.z += 0.02;
+	cone.rotation.x += 0.01;
+	cone.rotation.y += 0.01;
+	cone.rotation.z += 0.01;
+	camera.position.z += 0.01;
 
 	renderer.render( scene, camera );
 }
