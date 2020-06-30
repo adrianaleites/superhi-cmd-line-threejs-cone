@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const { series } = require('gulp');
 const webpack = require('webpack-stream');
+const ghpages = require('gh-pages');
 
 const browserSync = require('browser-sync').create();
 
@@ -38,7 +39,13 @@ function watch() {
     gulp.watch('src/js/*', js);
 }
 
+// Creates a gh-pages branch in GitHub (if there isn't one already) and sends the dist folder to that branch
+function deploy() {
+    return ghpages.publish('dist');
+}
+
 exports.html = html;
 exports.js = js;
 exports.watch = watch;
 exports.default = series(html, js, watch);
+exports.deploy = deploy;
