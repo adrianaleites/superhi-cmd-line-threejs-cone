@@ -13,7 +13,7 @@
 - [npm](https://www.npmjs.com/) _(Node Package manager, to easily install packages)_
 - [Gulp](https://gulpjs.com/) _(A toolkit to automate & enhance your workflow)_
 - [webpack](https://webpack.js.org/) _(A static module bundler for modern JavaScript applications)_
-- [webpack-stream](https://www.npmjs.com/package/gh-pages) _(npm package to run webpack as a stream to conveniently integrate with gulp)_
+- [webpack-stream](https://www.npmjs.com/package/webpack-stream) _(npm package to run webpack as a stream to conveniently integrate with gulp)_
 - [gh-pages](https://www.npmjs.com/package/gh-pages) _(npm package to publish files to a gh-pages branch on GitHub)_
 
 ---
